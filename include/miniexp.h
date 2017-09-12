@@ -4,7 +4,9 @@
 #include <string>
 
 namespace miniexp {
-	bool match (const string& regexp, const string& text);
+	bool match (const std::string& regexp, const std::string& text);
+	bool match_star (int c, char* regexp, char* text);
+	bool match (char* regexp, char* text);
 }
 
 #endif // MINIEXP_H
