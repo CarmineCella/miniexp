@@ -13,6 +13,7 @@ namespace miniexp {
         }
         return false;
     }
+
     // leftmost longest search for c*regexp */
     int match_star (int c, char *regexp, char *text) {
         char *t;
@@ -24,6 +25,7 @@ namespace miniexp {
         } while (t-- > text);
         return false;
     }
+    
     // search for regexp anywhere in text
     bool match (char* regexp, char* text) {
         if (regexp[0] == '^')
