@@ -15,7 +15,7 @@ namespace miniexp {
     }
 
     // leftmost longest search for c*regexp */
-    int match_star (int c, char *regexp, char *text) {
+    bool match_star (int c, char *regexp, char *text) {
         char *t;
 
         for (t = text; *t != '\0' && (*t == c || c == '.'); t++)
